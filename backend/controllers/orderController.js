@@ -10,7 +10,7 @@ const razorpay = new Razorpay({
 
 const placeOrder = async (req,res) => {
 
-    const frontend_url = "http://localhost:5174";
+    const frontend_url = "https://aagrikart-fooddel-frontend.onrender.com";
 
     try {
         const newOrder = new orderModel({

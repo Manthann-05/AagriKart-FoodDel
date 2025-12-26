@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
 
-  const url = "http://localhost:3000";
+  const url = "https://aagrikart-fooddel-backend.onrender.com";
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">

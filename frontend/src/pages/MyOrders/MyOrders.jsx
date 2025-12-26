@@ -90,7 +90,7 @@ const MyOrders = () => {
 
         {/* Orders */}
         <div className="flex flex-col gap-6">
-          {[...data].map((order, index) => {
+          {[...data].reverse().map((order, index) => {
             const itemsText = order.items
               ?.map((it) => `${it.name} x ${it.quantity}`)
               .join(", ");
@@ -140,7 +140,7 @@ const MyOrders = () => {
                           </p>
                         </div>
                         <p className="text-xs text-zinc-500 mt-1">
-                          Order #{String(index + 1).padStart(3, "0")}
+                          Order #{String(data.length - index).padStart(3, "0")}
                         </p>
                       </div>
                     </div>

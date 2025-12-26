@@ -159,7 +159,7 @@ const Cart = () => {
       {/* Bottom section */}
       <div className="cart-bottom mt-10 w-full flex flex-col lg:flex-row gap-y-8 gap-x-8 justify-between">
         {/* Totals */}
-        <div className="cart-total w-full md:w-[50%] lg:w-[46%] order-2 lg:order-1">
+        <div className="cart-total w-full md:w-2/3 lg:w-1/2 order-2 lg:order-1">
           <div className="rounded-2xl glass-panel shadow-[0_18px_45px_rgba(0,0,0,0.7)] p-6">
             <h2 className="font-bold text-xl mb-4 text-zinc-900 dark:text-zinc-50">
               Cart Totals
@@ -224,9 +224,9 @@ const Cart = () => {
         </div>
 
         {/* Promo code */}
-        <div className="cart-promocode w-full md:w-[50%] lg:w-[46%] order-1 lg:order-2">
+        <div className="cart-promocode w-full md:w-2/3 lg:w-1/2 order-1 lg:order-2">
           <div className="rounded-2xl glass-panel shadow-[0_18px_45px_rgba(0,0,0,0.7)] p-6">
-            <p className="text-sm text-zinc-600 dark:text-zinc-300 font-semibold mb-3">
+            <p className="text-sm text-zinc-600 max-[460px]:tracking-tight dark:text-zinc-300 font-semibold mb-3">
               If you have a promo code, enter it here
             </p>
 

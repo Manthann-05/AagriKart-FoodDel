@@ -141,18 +141,22 @@ const Navbar = ({ setShowLogin }) => {
               <button
                 onClick={() => setShowLogin(true)}
                 className="
-                  bg-linear-to-r from-red-500 to-orange-500
-                  text-white text-[11px] font-bold uppercase tracking-[0.22em]
-                  px-5 py-2.5 rounded-full
+                  whitespace-nowrap
+                  bg-linear-to-r from-red-500 to-orange-500 text-white
+                  text-[10px] sm:text-[11px]
+                  font-bold uppercase
+                  tracking-[0.12em] sm:tracking-[0.22em]
+                  px-3.5 sm:px-5
+                  py-2 sm:py-2.5
+                  rounded-full
                   shadow-[0_14px_38px_rgba(248,113,113,0.7)]
                   hover:shadow-[0_18px_48px_rgba(248,113,113,0.9)]
-                  hover:translate-y-px
-                  active:translate-y-0.5 active:scale-[0.98]
                   transition-all duration-200
-                  hidden sm:inline-flex
+                  inline-flex items-center justify-center
                 "
               >
-                Get Started
+                <span className="inline sm:hidden">Start</span>
+                <span className="hidden sm:inline">Get Started</span>
               </button>
             ) : (
               <div className="flex items-center border-l border-zinc-800 pl-4 gap-2">

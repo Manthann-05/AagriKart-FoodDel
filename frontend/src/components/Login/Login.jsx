@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
 import axios from "axios";
+import { toast } from 'react-toastify';
 
 const Login = ({setShowLogin}) => {
 
@@ -40,7 +41,7 @@ const Login = ({setShowLogin}) => {
       setShowLogin(false)
     }
     else{
-      alert(response.data.message)
+      toast.error("User already registered");
     }
   }
 

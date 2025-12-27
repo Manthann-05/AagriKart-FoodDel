@@ -221,7 +221,7 @@ const Footer = () => {
                       <img
                         src="/favicon.png"
                         alt=""
-                        className="block h-full w-full object-cover scale-[1.6]"
+                        className="block h-full w-full object-contain scale-90"
                       />
                     </div>
                   </div>

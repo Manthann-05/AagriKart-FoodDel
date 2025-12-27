@@ -7,6 +7,7 @@ import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
 import MyOrders from "./pages/MyOrders/MyOrders";
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -16,6 +17,7 @@ const App = () => {
       {showLogin ? <Login setShowLogin={setShowLogin} /> : null}
 
       <div className="app w-[80%] max-[750px]:w-[90%] m-auto">
+        <ToastContainer theme="dark" />
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path="/" element={<Home />} />

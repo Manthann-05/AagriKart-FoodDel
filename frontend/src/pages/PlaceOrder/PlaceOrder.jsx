@@ -3,6 +3,7 @@ import { StoreContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ShieldCheck, MapPin, Mail, Phone, CreditCard } from "lucide-react";
+import { toast } from "react-toastify";
 
 const PlaceOrder = () => {
   const {
@@ -59,7 +60,7 @@ const PlaceOrder = () => {
       });
 
       if (!response.data.success) {
-        alert("Order creation failed");
+        toast.error("Order creation failed");
         return;
       }
 
@@ -122,7 +123,7 @@ const PlaceOrder = () => {
       razorpay.open();
     } catch (error) {
       console.log(error);
-      alert("Something went wrong");
+      toast.error("Something went wrong");
     } finally {
       setLoading(false);
     }

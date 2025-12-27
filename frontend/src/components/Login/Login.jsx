@@ -74,9 +74,9 @@ const Login = ({setShowLogin}) => {
         </div>
 
         {currState==="Login" ? 
-        <p>Create a new account ? <span className='text-orange-500 font-semibold' onClick={()=>{setCurrState("Sign Up")}}>Click here</span></p> : 
+        <p>Create a new account ? <span className='text-orange-500 font-semibold cursor-pointer' onClick={()=>{setCurrState("Sign Up")}}>Click here</span></p> : 
 
-        <p>Already have an account ? <span className='text-orange-500 font-semibold' onClick={()=>{setCurrState("Login")}}>Login here</span></p>}
+        <p>Already have an account ? <span className='text-orange-500 font-semibold cursor-pointer' onClick={()=>{setCurrState("Login")}}>Login here</span></p>}
 
       </form>
 

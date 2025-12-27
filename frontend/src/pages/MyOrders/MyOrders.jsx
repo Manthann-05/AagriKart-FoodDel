@@ -147,7 +147,7 @@ const MyOrders = () => {
 
                     <div className="text-right">
                       <p className="text-zinc-100 font-bold text-lg">
-                        ${order.amount}.00
+                        ₹{order.amount}.00
                       </p>
                       <p className="text-xs text-zinc-500">
                         Items: {order.items?.length || 0}

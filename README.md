@@ -92,9 +92,9 @@ AagriKart-FoodDel/
       <td align="center"><b>👨‍💻 Admin Panel</b></td> 
     </tr> 
     <tr> 
-      <td><img src="https://github.com/Manthann-05/AagriKart-FoodDel/blob/main/frontend/src/assets/" alt="Menu" /></td> 
-      <td><img src="https://github.com/Manthann-05/AagriKart-FoodDel/blob/main/frontend/src/assets/" alt="Cart" /></td> 
-      <td><img src="https://github.com/Manthann-05/AagriKart-FoodDel/blob/main/frontend/src/assets/" alt="Admin" /></td> 
+      <td><img src="https://github.com/Manthann-05/AagriKart-FoodDel/blob/main/frontend/src/assets/food-menu" alt="Menu" /></td> 
+      <td><img src="https://github.com/Manthann-05/AagriKart-FoodDel/blob/main/frontend/src/assets/cart" alt="Cart" /></td> 
+      <td><img src="https://github.com/Manthann-05/AagriKart-FoodDel/blob/main/admin/src/assets/admin-panel" alt="Admin" /></td> 
     </tr> 
   </table> 
 </div>
